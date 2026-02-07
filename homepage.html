@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLX - Buy and Sell</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="homepage.css">
+    <style>
+        .sell-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  font-weight: 700;
+  border-radius: 999px;
+  background:
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(90deg, #ffc107, #00c6ff, #ffc107) border-box;
+  background-size: 100% 100%, 300% 300%;
+  border: 3px solid transparent;
+  cursor: pointer;
+  font-family: sans-serif;
+  animation: borderMove 3s ease infinite;
+}
+.sell-btn::before {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #ffc107, #00c6ff, #ffc107);
+  background-size: 300% 300%;
+  filter: blur(12px);
+  opacity: 0.5;
+  z-index: -1;
+  animation: glowMove 3s ease infinite;
+}
+@keyframes borderMove {
+  0% { background-position: 0% 50%, 0% 50%; }
+  50%{ background-position: 0% 50%, 100% 25%; }
+  100% { background-position: 0% 50%, 0% 50%; }
+}
+
+@keyframes glowMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+    </style>
+</head>
+<body>
+    <!--Navbar-->
+    <div class="navbar">
+
+            <div class="navbar-first">
+
+                <div class="nav-leftshelf">
+                    <a href="homepage.html"><svg width="70" height="50" viewBox="-2 -10 40 40" preserveAspectRatio="xMidYMid meet">
+                      <path d="M18.9 20.77V0h4.93v20.77zM0 10.39a8.56 8.56 0 1 1 8.56 8.56A8.56 8.56 0 0 1 0 10.4zm5.97-.01a2.6 2.6 0 1 0 2.6-2.6 2.6 2.6 0 0 0-2.6 2.6zm27 5.2l-1.88-1.87-1.87 1.88H25.9V12.3l1.9-1.9-1.9-1.89V5.18h3.27l1.92 1.92 1.93-1.92h3.27v3.33l-1.9 1.9 1.9 1.9v3.27z" fill="black"/>
+                    </svg></a>            
+                    <button class="motorBtn"><img src="assets/car.svg" alt="Logo" width="40" height="40">Motors</button>        
+                    <button class="propertyBtn"><img src="assets/house.svg" alt="Logo" width="40" height="40">Property</button>        
+                </div>
+
+                <div class="nav-rightshelf">
+                    <i class="fa-regular fa-message"></i>
+                    <i class="fa-regular fa-bell"></i>
+                    <img src="assets/cart-shopping.svg" width="40" height="40">
+                    <div class="profileInfoNav">
+                    <img src="assets/profPic.svg" width="40" height="40" style="border-radius: 999px;">
+                    <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <button class="sell-btn">Sell</button>
+                </div>
+
+            </div>
+        <!--Search Filters-->
+        <div class="nav-second">
+
+            <div class="filterInputs">
+        
+                <div class="locationFilter">
+        
+                    <div class="filterInputs-leftshelf">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="locationFilterName">Pakistan</p>
+                    </div>
+        
+                    <div class="filterInputs-rightshelf">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+        
+                </div>
+        
+                <input type="text" placeholder="Search Mobile Phones, Cars and more..." class="searchInputMain">
+                <div class="searchBtnClick"><i class="fa-solid fa-magnifying-glass"></i>  Search</div>
+            </div>
+    
+        </div>
+    </div>
+
+    <!--Main Section-->
+    <div class="mainSection">
+        <!--Categories-->
+        <div class="categoriesHome">
+            <div class="allCats">
+                <p>All Categories</p>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+        </div>
+        <!--Category Icons-->
+        <div class="categoryIcons">
+            <div class="catBox">
+                <img src="assets/phone.png">
+                <p>Mobiles</p>
+            </div>
+            <div class="catBox">
+                <img src="assets/car.png">
+                <p>Vehicles</p>
+            </div>
+            <div class="catBox">
+                <img src="assets/house.png">
+                <p>Property</p>
+            </div>
+            <div class="catBox">
+                <img src="assets/bike.png">
+                <p>Bikes</p>
+            </div>
+            <div class="catBox">
+                <img src="assets/service.png">
+                <p>Services</p>
+            </div>
+            <div class="catBox">
+                <img src="assets/suticase.png">
+                <p>Jobs</p>
+            </div>
+            <div class="catBox">
+                <img src="assets/dog1.png">
+                <p>Animals</p>
+            </div>
+            <div class="catBox">
+                <img src="assets/furniture.png">
+                <p>Furniture</p>
+            </div>
+            <div class="catBox">
+                <img src="assets/dress.png">
+                <p>Fashion</p>
+            </div>
+            <div class="catBox">
+                <img src="assets/book.png">
+                <p>Books</p>
+            </div>
+            <div class="catBox">
+                <img src="assets/duck.png">
+                <p>Kids</p>
+            </div>
+        </div>
+        <!--Popular Cats-->
+        <div class="topCat1">
+            <div>
+                <b>Mobile Phones</b>
+                <p>View More</p>
+            </div>
+            <div class="cat1Flex">
+                <div class="ad">
+                    <img src="https://starcity.pk/wp-content/uploads/2022/08/Iphone-x-2-1.jpg">
+                    <b class="adPrice">Rs 49,000</b>
+                    <p class="adName">Iphone X</p>
+                    <p class="adLoc">G-10, Islamabad</p>
+                    <p class="adTime">2 weeks ago</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/589111a43c.js" crossorigin="anonymous"></script>
+    <script type="module" src="script/homepage.js"></script>
+</body>
+</html>
