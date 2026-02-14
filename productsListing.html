@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/productsListing.css">
+</head>
+<body>
+        <!--Navbar-->
+    <div class="navbar">
+
+            <div class="navbar-first">
+
+                <div class="nav-leftshelf">
+                    <a href="homepage.html" class="OLXLogo"><svg width="70" height="50" viewBox="-2 -12 40 40" preserveAspectRatio="xMidYMid meet">
+                      <path d="M18.9 20.77V0h4.93v20.77zM0 10.39a8.56 8.56 0 1 1 8.56 8.56A8.56 8.56 0 0 1 0 10.4zm5.97-.01a2.6 2.6 0 1 0 2.6-2.6 2.6 2.6 0 0 0-2.6 2.6zm27 5.2l-1.88-1.87-1.87 1.88H25.9V12.3l1.9-1.9-1.9-1.89V5.18h3.27l1.92 1.92 1.93-1.92h3.27v3.33l-1.9 1.9 1.9 1.9v3.27z" fill="black"/>
+                    </svg></a>            
+                    <button class="motorBtn"><img src="assets/car.svg" alt="Logo" width="40" height="40">Motors</button>        
+                    <button class="propertyBtn"><img src="assets/house.svg" alt="Logo" width="40" height="40">Property</button>        
+                </div>
+
+                <div class="nav-rightshelf">
+                    <i class="fa-regular fa-message" id="messageBoxNav"></i>
+                    <i class="fa-regular fa-bell" id="notisBellNav"></i>
+                    <img src="assets/cart-shopping.svg" width="40" height="40" id="shoppingCartNav">
+                    <div class="profileInfoNav">
+                    <img src="assets/profPic.svg" width="40" height="40" style="border-radius: 999px;">
+                    <i class="fa-solid fa-angle-down" id="profileDropdown"></i>
+                    </div>
+                    <div class="sell-btn-wrapper">
+                        <button class="sell-btn">Sell</button>
+                    </div>
+                </div>
+
+            </div>
+        <!--Search Filters-->
+        <div class="nav-second">
+
+            <div class="filterInputs">
+        
+                <div class="locationFilter" id="locationFilter">
+        
+                    <div class="filterInputs-leftshelf">
+                    <i class="fa-solid fa-location-dot" id="locationPingIcon"></i>
+                    <p class="locationFilterName" id="selectedCity">Pakistan</p>
+                    </div>
+        
+                    <div class="filterInputs-rightshelf">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="locationFilterOptions">
+                        <div class="locationSearch">
+                            <input type="text" placeholder="Search City ..." id="citySearchInput">
+                        </div>
+                        <div class="cityList" id="cityList"></div>
+                    </div>
+        
+                </div>
+                <form action="productsListing.html" method="GET" class="searchInputMainDiv">
+                    <input type="text" placeholder="Search Mobile Phones, Cars and more..." name="search" class="searchInputMain">
+                    <button type="submit" class="searchBtnClick"><i class="fa-solid fa-magnifying-glass"></i>  Search</button>
+                </form>
+            </div>
+    
+        </div>
+    </div>
+    <!--Main Section-->
+    <div class="filtersProducts">
+        <!--Filters-->
+        <div class="filters">
+            <h2>Filters</h2>
+            <!--Categories-->
+            <h4>Categories</h4>
+            <a><p>Cars</p></a>
+            <a><p>Bikes</p></a>
+            <a><p>Houses</p></a>
+            <a><p>Mobile Phones</p></a>
+            <a><p>Animals</p></a>
+            <a><p>Kids</p></a>
+            <br>
+            <!--Price Filter-->
+            <h4>Price Range</h4>
+            <div class="priceRangeFilter">
+                <input type="text" placeholder="Min" class="priceRangeFilterMin">
+                <p class="noHover">to</p>
+                <input type="text" placeholder="Max" class="priceRangeFilterMax">
+            </div>
+            <br>
+            <!--Location-->
+            <h4>Location</h4>
+            <div class="locationFilterProducts">
+                <p class="locationFilterProductsName">Pakistan</p>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+        </div>
+        <!--Product Grid-->
+        <section id="productsListing"></section>
+    </div>
+        <!--Footer-->
+        <div class="footer">
+            <div class="popularCats">
+                <b>Popular Categories</b>
+                <a href="productsListing.html?category=car"><p>Cars</p></a>
+                <a href="productsListing.html?category=house"><p>Flats for Rent</p></a>
+                <a href="productsListing.html?category=mobile"><p>Mobile Phones</p></a>
+                <a href="productsListing.html?category=job"><p>Jobs</p></a>
+            </div>
+            <div class="trendingSearches">
+                <b>Trending Searches</b>
+                <a href="productsListing.html?category=bike"><p>Bikes</p></a>
+                <a href="productsListing.html?search=watches"><p>Watches</p></a>
+                <a href="productsListing.html?category=book"><p>Books</p></a>
+                <a href="productsListing.html?search=dogs"><p>Dogs</p></a>
+            </div>
+            <div class="aboutUsFooter">
+                <b>About Us</b>
+                <p>OLX Blog</p>
+                <p>Contact Us</p>
+                <p>OLX For Business</p>
+            </div>
+            <div class="olxHelp">
+                <b>OLX</b>
+                <p>Help</p>
+                <p>Sitemap</p>
+                <p>Terms of Use</p>
+                <p>Privacy Policy</p>
+            </div>
+            <div class="olxSocialLinks">
+                <b>Follow Us</b>
+                <div class="olxSocialLinksDiv">
+                    <div class="twitterLink"><i class="fa-brands fa-x-twitter"></i></div>
+                    <div class="facebookLink"><i class="fa-brands fa-facebook"></i></div>
+                    <div class="youtubeLink"><i class="fa-brands fa-youtube"></i></div>
+                    <div class="instagramLink"><i class="fa-brands fa-instagram"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--BackToTop Toggle Button-->
+    <button id="backToTop">
+        <i class="fa-solid fa-angle-down" id="backtotopDropdown"></i>
+        <p>Back To Top</p>
+    </button>
+    <script src="https://kit.fontawesome.com/589111a43c.js" crossorigin="anonymous"></script>
+    <script type="module" src="script/productsListing.js"></script>
+    <script type="module" src="script/main.js"></script>
+</body>
+</html>

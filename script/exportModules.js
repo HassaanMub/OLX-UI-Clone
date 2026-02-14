@@ -275,7 +275,7 @@ export const ads = [
         price: 120000000,
         cat: "house",
         location: "DHA Phase 2",
-        city: "Islamabad",
+        city: "Lahore",
         imgSrc: "https://media.zameen.com/thumbnails/88351083-800x600.jpeg",
     },
     {
@@ -302,7 +302,7 @@ export const ads = [
         price: 120000000,
         cat: "house",
         location: "DHA Phase 2",
-        city: "Islamabad",
+        city: "Karachi",
         imgSrc: "https://media.zameen.com/thumbnails/88351083-800x600.jpeg",
     },
     {
@@ -344,12 +344,9 @@ export function formatPricePKR(price) {
 //backToTop Toggle Button
 export function initBackToTop(btnId, showAfter = 200) {
     const btn = document.getElementById(btnId);
-    if(!btn) {
-        console.log("Not FOund backtoTop butotn");
-        return;
-    };
+    if(!btn) {return}
     window.addEventListener("scroll",()=>{
-        btn.style.display = window.scrollY > showAfter ? "block" : "none";
+        btn.style.display = window.scrollY > showAfter ? "flex" : "none";
     });
     btn.addEventListener("click",()=>{
         window.scrollTo({top: 0, behavior: "smooth"});
